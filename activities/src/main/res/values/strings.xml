@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TP1</string>
+    <string name="click_me">Click me</string>
+    <string name="nombre_1">Nombre 1</string>
+    <string name="nombre_2">Nombre 2</string>
+    <string name="calculer">Calculer</string>
+    <string name="fairecalcul">Faire un calcul</string>
+</resources>
