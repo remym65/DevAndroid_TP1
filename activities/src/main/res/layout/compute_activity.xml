@@ -37,12 +37,14 @@ android:padding="10dp">
         tools:text="Le résultat s'afficher ici" />
 
     <Button
-    android:id="@+id/btn_calculer"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:text="@string/calculer"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent" />
+        android:id="@+id/btn_calculer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="400dp"
+        android:text="@string/calculer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         imageView = findViewById(R.id.image_view)
+
         button = findViewById(R.id.my_button)
         button.setOnClickListener(this)
         loadImage("https://goo.gl/gEgYUd")

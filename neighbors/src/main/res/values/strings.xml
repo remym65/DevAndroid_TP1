@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">neighbors</string>
+    <string name="confirmDelate">Voulez vous vraiment supprimer?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="hint_address">adresse</string>
+    <string name="image_text">Image</string>
+    <string name="hint_nom">Nom</string>
+</resources>
