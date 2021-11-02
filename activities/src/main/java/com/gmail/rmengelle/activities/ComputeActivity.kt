@@ -14,8 +14,8 @@ class ComputeActivity : AppCompatActivity(), View.OnClickListener {
 //    private lateinit var result: TextView
 
     private lateinit var binding: ComputeActivityBinding
-    var number1 =0
-    var number2 =0
+    var number1 = 0
+    var number2 = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,18 +27,19 @@ class ComputeActivity : AppCompatActivity(), View.OnClickListener {
             btnCalculer.setOnClickListener(this@ComputeActivity)
 
             field1.doAfterTextChanged {
-                if (field1.text.toString().isDigitsOnly() && field1.text.toString().isNotBlank()
-                    && field2.text.toString().isDigitsOnly() && field2.text.toString().isNotBlank()) {
+                if (field1.text.toString().isDigitsOnly() && field1.text.toString().isNotBlank() &&
+                    field2.text.toString().isDigitsOnly() && field2.text.toString().isNotBlank()
+                ) {
                     btnCalculer.visibility = View.VISIBLE
                     number1 = binding.field1.text.toString().toInt()
                 } else {
                     btnCalculer.visibility = View.INVISIBLE
                 }
-
             }
             field2.doAfterTextChanged {
-                if (field2.text.toString().isDigitsOnly() && field2.text.toString().isNotBlank()
-                    &&field1.text.toString().isDigitsOnly() && field1.text.toString().isNotBlank()) {
+                if (field2.text.toString().isDigitsOnly() && field2.text.toString().isNotBlank() &&
+                    field1.text.toString().isDigitsOnly() && field1.text.toString().isNotBlank()
+                ) {
                     btnCalculer.visibility = View.VISIBLE
                     number2 = binding.field2.text.toString().toInt()
                 } else {
@@ -81,7 +82,7 @@ class ComputeActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
-        calculer(number1,number2)
+        calculer(number1, number2)
     }
 
     private fun calculer(intNb1: Int, intNb2: Int) {

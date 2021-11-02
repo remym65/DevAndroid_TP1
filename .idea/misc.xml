@@ -6,13 +6,21 @@
         <entry key="..\:/Users/r.mengelle/Documents/DevAndroid/TP1/activities/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/Users/r.mengelle/Documents/DevAndroid/TP1/activities/src/main/res/layout/compute_activity.xml" value="0.264" />
         <entry key="..\:/Users/r.mengelle/Documents/DevAndroid/TP1/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/r.mengelle/Documents/DevAndroid/TP1/neighbors/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.13425925925925927" />
         <entry key="..\:/Users/r.mengelle/Documents/DevAndroid/TP1/neighbors/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.23072916666666668" />
         <entry key="..\:/Users/r.mengelle/Documents/DevAndroid/TP1/neighbors/src/main/res/drawable/ic_baseline_person_24.xml" value="0.23072916666666668" />
         <entry key="..\:/Users/r.mengelle/Documents/DevAndroid/TP1/neighbors/src/main/res/drawable/ic_launcher_background.xml" value="0.18125" />
-        <entry key="..\:/Users/r.mengelle/Documents/DevAndroid/TP1/neighbors/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/r.mengelle/Documents/DevAndroid/TP1/neighbors/src/main/res/layout/add_neighbor.xml" value="0.264" />
-        <entry key="..\:/Users/r.mengelle/Documents/DevAndroid/TP1/neighbors/src/main/res/layout/list_neighbors_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/r.mengelle/Documents/DevAndroid/TP1/neighbors/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/r.mengelle/Documents/DevAndroid/TP1/neighbors/src/main/res/layout/add_neighbor.xml" value="0.4" />
+        <entry key="..\:/Users/r.mengelle/Documents/DevAndroid/TP1/neighbors/src/main/res/layout/custom_title_bar.xml" value="0.1" />
+        <entry key="..\:/Users/r.mengelle/Documents/DevAndroid/TP1/neighbors/src/main/res/layout/edit_neighbor_fragment.xml" value="0.21403508771929824" />
+        <entry key="..\:/Users/r.mengelle/Documents/DevAndroid/TP1/neighbors/src/main/res/layout/list_neighbors_fragment.xml" value="0.1" />
         <entry key="..\:/Users/r.mengelle/Documents/DevAndroid/TP1/neighbors/src/main/res/layout/neighbor_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/r.mengelle/Documents/DevAndroid/TP1/neighbors/src/main/res/menu/home_menu.xml" value="0.13903508771929823" />
+        <entry key="..\:/Users/r.mengelle/Documents/DevAndroid/TP1/neighbors/src/main/res/menu/main.xml" value="0.1" />
+        <entry key="..\:/Users/r.mengelle/Documents/DevAndroid/TP1/neighbors/src/main/res/menu/nav_menu.xml" value="0.1" />
+        <entry key="..\:/Users/r.mengelle/Documents/DevAndroid/TP1/neighbors/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.13425925925925927" />
+        <entry key="..\:/Users/r.mengelle/Documents/DevAndroid/TP1/neighbors/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.13425925925925927" />
       </map>
     </option>
   </component>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_input">20dp</dimen>
+    <dimen name="width_input">350dp</dimen>
+    <dimen name="height_input">48dp</dimen>
+    <dimen name="errorTextHeight">20dp</dimen>
+</resources>

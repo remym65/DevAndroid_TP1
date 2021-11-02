@@ -52,7 +52,6 @@ class ListNeighborsAdapter(
         val mNeighbourAvatar: ImageView
         val mNeighbourName: TextView
         val mDeleteButton: ImageButton
-
         init {
             // Enable click on item
             mNeighbourAvatar = view.findViewById(R.id.item_list_avatar)

@@ -9,11 +9,13 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.gmail.rmengelle.neighbors.NavigationListener
 import com.gmail.rmengelle.neighbors.R
 import com.gmail.rmengelle.neighbors.adapters.ListNeighborHandler
 import com.gmail.rmengelle.neighbors.adapters.ListNeighborsAdapter
 import com.gmail.rmengelle.neighbors.data.NeighborRepository
 import com.gmail.rmengelle.neighbors.models.Neighbor
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class ListNeighborsFragment : Fragment(), ListNeighborHandler {
     private lateinit var recyclerView: RecyclerView
@@ -32,6 +34,13 @@ class ListNeighborsFragment : Fragment(), ListNeighborHandler {
                 DividerItemDecoration.VERTICAL
             )
         )
+        val addNeighbor = view.findViewById<FloatingActionButton>(R.id.addNeighbor)
+        addNeighbor.setOnClickListener {
+            (activity as? NavigationListener)?.let {
+                it.updateTitle(R.string.newNbgTitle)
+                it.showFragment(AddNeighbourFragment())
+            }
+        }
         return view
     }
 

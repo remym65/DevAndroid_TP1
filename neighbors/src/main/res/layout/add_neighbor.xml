@@ -9,7 +9,7 @@
         android:id="@+id/imageicon"
         android:layout_width="187dp"
         android:layout_height="108dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="10dp"
         android:src="@drawable/ic_baseline_person_outline_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,13 +18,14 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/imageLyt"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="354dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="@dimen/width_input"
+        android:layout_height="@dimen/height_input"
+        android:layout_marginTop="@dimen/space_input"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageicon" />
+        app:layout_constraintTop_toBottomOf="@id/imageicon"
+        />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/image_input"
@@ -37,13 +38,24 @@
         android:ems="10"
         android:hint="@string/image_text"
         android:inputType="text" />
+    
+    <TextView
+        android:id="@+id/errorImgText"
+        android:layout_width="@dimen/width_input"
+        android:layout_height="@dimen/errorTextHeight"
+        app:layout_constraintTop_toBottomOf="@id/imageLyt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/teal_700"
+        />
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/nomLyt"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="354dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="25dp"
+        android:layout_width="@dimen/width_input"
+        android:layout_height="@dimen/height_input"
+        android:layout_marginTop="@dimen/space_input"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,19 +73,39 @@
         android:hint="@string/hint_nom"
         android:inputType="text" />
 
+    <TextView
+        android:id="@+id/errorNomText"
+        android:layout_width="@dimen/width_input"
+        android:layout_height="@dimen/errorTextHeight"
+        app:layout_constraintTop_toBottomOf="@id/nomLyt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/teal_700"
+        />
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/addressLyt"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="354dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="25dp"
+        android:layout_width="@dimen/width_input"
+        android:layout_height="@dimen/height_input"
+        android:layout_marginTop="@dimen/space_input"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/nomLyt" />
 
+    <TextView
+        android:id="@+id/errorAdresseText"
+        android:layout_width="@dimen/width_input"
+        android:layout_height="@dimen/errorTextHeight"
+        app:layout_constraintTop_toBottomOf="@id/addressLyt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/teal_700"
+        />
+
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/address"
+        android:id="@+id/adresse_input"
         android:layout_width="@id/addressLyt"
         android:layout_height="@id/addressLyt"
         app:layout_constraintTop_toTopOf="@id/addressLyt"
@@ -84,5 +116,116 @@
         android:hint="@string/hint_address"
         android:inputType="text" />
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/telephoneLyt"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/width_input"
+        android:layout_height="@dimen/height_input"
+        android:layout_marginTop="@dimen/space_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addressLyt" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/telephone_input"
+        android:layout_width="@id/telephoneLyt"
+        android:layout_height="@id/telephoneLyt"
+        app:layout_constraintTop_toTopOf="@id/telephoneLyt"
+        app:layout_constraintBottom_toBottomOf="@id/telephoneLyt"
+        app:layout_constraintStart_toStartOf="@id/telephoneLyt"
+        app:layout_constraintEnd_toEndOf="@id/telephoneLyt"
+        android:ems="10"
+        android:hint="@string/hint_telephone"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:id="@+id/errorPhoneText"
+        android:layout_width="@dimen/width_input"
+        android:layout_height="@dimen/errorTextHeight"
+        app:layout_constraintTop_toBottomOf="@id/telephoneLyt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/teal_700"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/websiteLyt"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/width_input"
+        android:layout_height="@dimen/height_input"
+        android:layout_marginTop="@dimen/space_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/telephoneLyt" />
+
+    <TextView
+        android:id="@+id/errorWebsiteText"
+        android:layout_width="@dimen/width_input"
+        android:layout_height="@dimen/errorTextHeight"
+        app:layout_constraintTop_toBottomOf="@id/websiteLyt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/teal_700"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/website_input"
+        android:layout_width="@id/websiteLyt"
+        android:layout_height="@id/websiteLyt"
+        app:layout_constraintTop_toTopOf="@id/websiteLyt"
+        app:layout_constraintBottom_toBottomOf="@id/websiteLyt"
+        app:layout_constraintStart_toStartOf="@id/websiteLyt"
+        app:layout_constraintEnd_toEndOf="@id/websiteLyt"
+        android:ems="10"
+        android:hint="@string/hint_website"
+        android:inputType="text" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/aproposLyt"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/width_input"
+        android:layout_height="100dp"
+        android:layout_marginTop="@dimen/space_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/websiteLyt" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/apropos_input"
+        android:layout_width="@id/aproposLyt"
+        android:layout_height="@id/aproposLyt"
+        app:layout_constraintTop_toTopOf="@id/aproposLyt"
+        app:layout_constraintBottom_toBottomOf="@id/aproposLyt"
+        app:layout_constraintStart_toStartOf="@id/aproposLyt"
+        app:layout_constraintEnd_toEndOf="@id/aproposLyt"
+        android:ems="10"
+        android:hint="@string/hint_apropos"
+        android:inputType="text"
+        android:maxLength="30"/>
+
+    <TextView
+        android:id="@+id/errorAproposText"
+        android:layout_width="@dimen/width_input"
+        android:layout_height="@dimen/errorTextHeight"
+        app:layout_constraintTop_toBottomOf="@id/aproposLyt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/teal_700"
+        />
+
+    <Button
+        android:id="@+id/buttonEnregistrer"
+        android:layout_width="@dimen/width_input"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@id/aproposLyt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/enregistrerButton"
+        android:layout_marginTop="20dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

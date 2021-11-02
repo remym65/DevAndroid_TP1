@@ -3,7 +3,15 @@
     <string name="confirmDelate">Voulez vous vraiment supprimer?</string>
     <string name="yes">Oui</string>
     <string name="no">Non</string>
-    <string name="hint_address">adresse</string>
+    <string name="hint_address">Adresse</string>
     <string name="image_text">Image</string>
     <string name="hint_nom">Nom</string>
+    <string name="hint_telephone">Telephone</string>
+    <string name="hint_website">Website</string>
+    <string name="hint_apropos">A propos de moi</string>
+    <string name="newNbgTitle">Nouveau voisin</string>
+    <string name="listNbgTitle">Liste voisins</string>
+    <string name="enregistrerButton">Enregistrer</string>
+    <string name="lienErrorString">Lien invalide</string>
+    <string name="lienOk">""</string>
 </resources>
