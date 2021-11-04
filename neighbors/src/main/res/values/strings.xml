@@ -9,9 +9,11 @@
     <string name="hint_telephone">Telephone</string>
     <string name="hint_website">Website</string>
     <string name="hint_apropos">A propos de moi</string>
-    <string name="newNbgTitle">Nouveau voisin</string>
+    <string name="addNbgTitle">Ajouter voisin</string>
+    <string name="createdNbgTitle">Voisin ajouté</string>
     <string name="listNbgTitle">Liste voisins</string>
     <string name="enregistrerButton">Enregistrer</string>
     <string name="lienErrorString">Lien invalide</string>
     <string name="lienOk">""</string>
+    <string name="title">\"\"</string>
 </resources>

@@ -37,7 +37,7 @@ class ListNeighborsFragment : Fragment(), ListNeighborHandler {
         val addNeighbor = view.findViewById<FloatingActionButton>(R.id.addNeighbor)
         addNeighbor.setOnClickListener {
             (activity as? NavigationListener)?.let {
-                it.updateTitle(R.string.newNbgTitle)
+                it.updateTitle(R.string.addNbgTitle)
                 it.showFragment(AddNeighbourFragment())
             }
         }

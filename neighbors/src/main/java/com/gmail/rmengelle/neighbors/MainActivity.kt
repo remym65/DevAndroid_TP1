@@ -15,19 +15,11 @@ class MainActivity : AppCompatActivity(), NavigationListener {
         setSupportActionBar(toolbar)
         updateTitle(R.string.listNbgTitle)
         showFragment(ListNeighborsFragment())
-//        changeFragment(ListNeighborsFragment())
     }
 
     override fun updateTitle(title: Int) {
         toolbar.setTitle(title)
     }
-
-    //    private fun changeFragment(fragment: Fragment) {
-//        supportFragmentManager.beginTransaction().apply {
-//            replace(R.id.fragment_container, fragment)
-//            addToBackStack(null)
-//        }.commit()
-//    }
 
     override fun showFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction().apply {

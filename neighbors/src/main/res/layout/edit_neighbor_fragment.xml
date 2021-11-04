@@ -5,14 +5,35 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="160dp"
-        android:layout_height="109dp"
-        android:text="EDIT"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="280dp"
-        android:textSize="50dp"
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="List"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"/>
+
+
+    <ImageView
+    android:id="@+id/imageicon"
+    android:layout_width="187dp"
+    android:layout_height="108dp"
+    android:layout_marginTop="10dp"
+    android:src="@drawable/ic_baseline_person_outline_24"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editTextCreatedNei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="276dp"
+        android:text="EDITION CREATED NEI"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

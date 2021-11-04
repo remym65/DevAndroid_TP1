@@ -17,12 +17,13 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_scrollFlags="scroll|enterAlways"
-        app:title="@string/app_name" />
+        app:title="@string/app_name"
+
+        app:titleTextColor="@color/purple_200"/>
 
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbar"
-        />
+        android:layout_below="@id/toolbar" />
 </RelativeLayout>

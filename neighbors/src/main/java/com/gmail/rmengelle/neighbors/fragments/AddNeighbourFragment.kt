@@ -9,17 +9,23 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.widget.Toolbar
 import androidx.core.text.isDigitsOnly
 import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.gmail.rmengelle.neighbors.NavigationListener
 import com.gmail.rmengelle.neighbors.R
 import com.gmail.rmengelle.neighbors.data.NeighborRepository
 import com.gmail.rmengelle.neighbors.models.Neighbor
 
 class AddNeighbourFragment : Fragment() {
+    private lateinit var toolbar: Toolbar
     private lateinit var recyclerView: RecyclerView
     private lateinit var buttonEnregistrer: Button
+    private lateinit var buttonBack: Button
     private lateinit var nom_input: EditText
     private lateinit var image_input: EditText
     private lateinit var adresse_input: EditText
@@ -46,17 +52,41 @@ class AddNeighbourFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.add_neighbor, container, false)
         setHasOptionsMenu(true)
-
         initInput(view)
         buttonEnregistrer = view.findViewById(R.id.buttonEnregistrer)
         controlInputs()
+        buttonBack.setOnClickListener() {
+            changeViewFragment(inflater, container, ListNeighborsFragment(), R.string.listNbgTitle)
+        }
         buttonEnregistrer.setOnClickListener() {
             if (checkAll()) {
-                Toast.makeText(context, "OK ENVOI", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Voisin ajouté", Toast.LENGTH_LONG).show()
                 callNeighborCreation()
+                changeViewFragment(inflater, container, EditNeighbourFragment(), R.string.createdNbgTitle)
             } else Toast.makeText(context, "REMPLIR TOUS LES CHAMPS", Toast.LENGTH_SHORT).show()
         }
         return view
+    }
+
+    private fun changeViewFragment(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        fragment: Fragment,
+        title: Int
+    ) {
+        val view = inflater.inflate(R.layout.list_neighbors_fragment, container, false)
+        recyclerView = view.findViewById(R.id.neighbors_list)
+        recyclerView.layoutManager = LinearLayoutManager(context)
+        recyclerView.addItemDecoration(
+            DividerItemDecoration(
+                requireContext(),
+                DividerItemDecoration.VERTICAL
+            )
+        )
+        (activity as? NavigationListener)?.let {
+            it.updateTitle(title)
+            it.showFragment(fragment)
+        }
     }
 
     private fun callNeighborCreation() {
@@ -147,6 +177,7 @@ class AddNeighbourFragment : Fragment() {
     }
 
     private fun initInput(view: View) {
+        buttonBack = view.findViewById(R.id.backButton)
         nom_input = view.findViewById<EditText>(R.id.nom_input)
         image_input = view.findViewById<EditText>(R.id.image_input)
         adresse_input = view.findViewById<EditText>(R.id.adresse_input)
